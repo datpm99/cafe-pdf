@@ -1,0 +1,45 @@
+{
+  "name": "cafe-pdf",
+  "version": "1.3.9",
+  "description": "A PDF viewer based on mozilla's PDF.js.",
+  "scripts": {
+    "test": "eslint lib/index.js",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "package": "vue-cli-service build --target lib --name cafe-pdf --dest package lib/index.js"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.10",
+    "node-ensure": "^0.0.0",
+    "buffer-loader": "^0.1.0",
+    "worker-loader": "^2.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.4.0",
+    "@vue/cli-plugin-eslint": "^4.4.0",
+    "@vue/cli-service": "^4.4.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "main": "lib/index.js",
+  "style": "package/cafe-pdf.css",
+  "files": [
+    "lib",
+    "package"
+  ],
+  "keywords": [
+    "pdfjs",
+    "vue"
+  ],
+  "author": "wangzhe <hi@wangdaodao.com>",
+  "license": "MIT",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
